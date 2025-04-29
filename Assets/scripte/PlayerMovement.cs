@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float velocityXSmoothing;
     private bool isGrounded;
 
-    public AudioClip jumpSound;         
+    public AudioClip jumpSound;           // เสียงกระโดด
     private AudioSource audioSource;
 
     void Start()
@@ -27,17 +27,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // ตรวจจับพื้น
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // รับ input
         float inputX = Input.GetAxisRaw("Horizontal");
 
+        // ตั้งเป้าความเร็วที่ต้องการ
         targetSpeed = inputX * moveSpeed;
 
+        // เปลี่ยนความเร็วอย่างนุ่มนวล
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
         float speed = Mathf.SmoothDamp(rb.linearVelocity.x, targetSpeed, ref velocityXSmoothing, 1 / accelRate);
 
         rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
 
+        // กระโดด
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);

@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 21514021b55dc13498b831f5db842a50
+  productGUID: b7d5a5c5b9ec9254f9af200578e5a427
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: lap week 14
+  productName: 2D final gmae
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -828,14 +828,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: lap week 14
+  metroPackageName: 2D final gmae
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: lap week 14
+  metroApplicationDescription: 2D final gmae
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -906,10 +906,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: e8e00290-3740-46d9-8ff4-d04c453ccf82
+  cloudProjectId: 373f844c-f117-42ec-bd9b-71cf626388aa
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: lap week 14
+  projectName: 2D final gmae
   organizationId: joxxt007
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
